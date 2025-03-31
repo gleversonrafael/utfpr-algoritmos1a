@@ -1,36 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> 
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Algoritmos 1º Ano do Técnico</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title> 31/03 - App</title>
 
     </head>
 
     <body>
-        <h1> Algoritmos realizados</h1>
-        
-        <h2> Listas de exercícios (mais difíceis)</h2>
-        <!-- 1 -->
-        <section>
-            <h2> 1º Lista</h2>
+        <h1> Primeiro App na UTFPR!</h1>
+        <h2> Valor da equação de bhaskara</h2>
+    
+        <form onsubmit="calculateAndShowBhaskaraEquation(event)">
+            <!--Entradas-->
+            <fieldset>
+                <label for="coefficientA"> a&#41;</label>
+                <input type="number" name="" id="coefficientA"> <br>
+    
+            </fieldset>
 
-            <ul>
-                <li> <a href="list01/01tilescounter/tilescounter.html"> 5&#41; Cálculo dos pisos</a> </li>
-                <li> <a href=""> 7&#41; Garrafas de Coca-Cola</a></li>
-                <li> <a href=""> 8&#41; Distância no plano cartesiano </a></li>
-                <li> <a href=""> 9&#41; Moedas de Pedrinho</a></li>
+            <fieldset>
+                <label for="coefficientB"> b&#41;</label>
+                <input type="number" name="" id="coefficientB"> <br>
 
-            </ul>
+            </fieldset>
+            
+            <fieldset>
+                <label for="coefficientC"> c&#41;</label>
+                <input type="number" name="" id="coefficientC"> <br>
 
-        </section>
+            </fieldset>
 
-        <!-- 2 -->
-        <section>
-            <h2> 2º Lista</h2>
+            <!-- Processamento-->
+            <fieldset>
+                <input type="reset" value="Apagar">
+                <input type="submit" value="Calcular">
+                
+            </fieldset>
 
-        </section>
+        </form>
+
+        <label for="resultSpan"> Resultado: </label>
+        <span id="resultSpan"></span>
 
     </body>
+
+    <script src="app.js"></script>
 
 </html>
